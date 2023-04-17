@@ -32,13 +32,15 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   position: fixed;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform-origin: center;
   transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+
+  transition: opacity,top .5s,.5s;
 }
 .popup-modal p {
   margin-bottom: 24px
@@ -54,6 +56,7 @@ button {
 
 .popup-modal.show {
   opacity: 100%;
+  top: 50%;
   pointer-events: all;
 }
 
